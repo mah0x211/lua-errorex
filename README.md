@@ -496,6 +496,16 @@ create a new error that equivalent to `error.new(message [, werr [, level [, tra
 - `msgidx:int`: index of the `message` argument.
 
 
+## int lua_error_format(lua_State *L, int fmtidx)
+
+create a new error that equivalent to `error.format(fmt [, ... [, werr [, level [, traceback]]]])` function.
+
+**Parameters**
+
+- `L:lua_State*`: a lua state.
+- `fmtidx:int`: index of the `fmt` argument.
+
+
 ## int lua_error_new_type(lua_State *L, int nameidx)
 
 create a new error type that equivalent to `error.type.new(name [, code [, message]])` function.
